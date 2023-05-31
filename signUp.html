@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+<!-- ----------- aos plugin ------------------------- -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- ----- fontawsome --------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ------ bootstrap ------------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- -------- style sheet-------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section class="d-flex justify-content-center align-items-center vh-100">
+        <div data-aos="zoom-out">
+            <h1 class="mb-3">Smart Login System</h1>
+            <div class="mb-3">
+                <input id="signUpName" type="text" placeholder="Enter your name" class="form-control ">
+                <span id="signUpNameAlert" class="text-danger  d-none ">Name must start with capital letter & consist at
+                    least 3 letter </span>
+            </div>
+            <div class="mb-3">
+                <input id="signUpMail" type="text" placeholder="Enter your email" class="form-control">
+                <span id="signUpMailAlert" class="text-danger d-none ">This email not valid , name@example </span>
+            </div>
+
+            <div class="mb-3">
+                <input id="signUpPass" type="text" placeholder="Enter your password" class="form-control">
+                <span id="signUpPassAlert" class="text-danger d-none">Password must contain (letter, number) at least 5
+                    character & may contain special character </span>
+            </div>
+            <div class="mb-3">
+                <p id="allRequiredAlert" class="text-danger mb-1 d-none">All inputs is required</p>
+                <p id="successMsg" class="text-success mb-1 d-none">Success</p>
+                <p id="existMailMsg" class="text-danger mb-1 d-none">This mail is exist</p>
+            </div>
+            <button id="submitBtn" class="mb-3 w-50">Sign Up</button>
+            <p>Don&#39;t have an account? <a href="" id="loginPage">Sign in</a></p>
+        </div>
+    </section>
+
+    <!-- ------ aos plugin ------------------------------------- -->
+    <script src="js/aos.js"></script>
+
+<!-- --------- bootstrap -------------------------- -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- --------- script file ------------------------------------ -->
+    <script src="js/signUp.js"></script>
+</body>
+
+</html>

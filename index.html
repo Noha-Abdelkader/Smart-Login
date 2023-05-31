@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="logIn" class="d-flex justify-content-center align-items-center vh-100">
+        <div>
+            <h1 class="mb-3">Smart Login System</h1>
+            <div class="mb-3">
+                <input id="loginMail" type="text" placeholder="Enter your email" class="form-control">
+                <span id="loginMailAlert" class="text-danger d-none ">This email not valid , name@example </span>
+            </div>
+
+            <div class="mb-3">
+                <input id="loginPass" type="text" placeholder="Enter your password" class="form-control">
+                <span id="loginPassAlert" class="text-danger d-none">Password not valid, please try again </span>
+
+            </div>
+            <button id="loginBtn" class="mb-3 w-50" >Login</button>
+            <p id="mailAlert" class="text-danger d-none">Wrong mail, please try again</p>
+            <p id="passAlert" class="text-danger d-none">Wrong password, please try again</p>
+            <p id="successMsg" class="text-success d-none"> Success</p>
+            <p>Don&#39;t have an account? <a href="" id="signUpPage">Sign Up</a></p>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url(../Josefin_Sans/static/JosefinSans-Bold.ttf);
+}
+:root{
+--mainColor:#fff;
+--secColor: #a64bf4;
+
+}
+body{
+    font-family: JosefinSans;
+    background-image: url(../image/bg-01.jpg);
+}
+/* ======================= */
+section>div{
+    background-color: var(--mainColor);
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.2);
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+section span{
+width: 266px;
+}
+section input.form-control {
+    padding: 0.5rem 1rem !important;
+    background-color: transparent !important;
+    color: var(--secColor) !important;
+    transition: all 0.5s;
+    margin-bottom: 0.25rem;
+}
+
+section button{
+    transition: all 0.5s;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 1rem ;
+    color: var(--mainColor);
+    border-radius: 0.375rem;
+    border: none;
+    background:linear-gradient(45deg,#00dbde , var(--secColor));
+    position: relative;
+    overflow: hidden;
+    
+}
+section button::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(249, 249, 245, 0.237);
+    top:-20%;
+    left:0;
+    width: 250px;
+    height: 50px;
+    transition: all 0.5s;
+}
+
+.form-control:focus {
+    border-color:var(--secColor);
+    outline: 0;
+    box-shadow: 0 0 0.5rem 0.25rem rgb(13 110 253 / 25%)!important;
+    transform: scale(1.05);
+}
+
+
+section h1 ,p , a , h4 , #home-content i {
+    color: var(--secColor);
+}
+section a {
+    transition: all 0.6s;
+}
+
+section button:hover { 
+transform: scale(1.05);
+}
+section button:hover::after {
+    top:100%; 
+
+}
+section a:hover{
+    color: #00dbde;
+}
+#home-content i {
+    font-size: 1.7rem;
+
+}
+section #home-content{
+    width: 400px;
+    height: 300px;
+}
+
